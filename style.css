@@ -7,3 +7,64 @@
 body {
     background-color: rgb(155, 55, 55);
 }
+
+/* --------------------------------------------
+   ENLACES
+-------------------------------------------- */
+a {
+  text-decoration: none;
+  color: inherit; /* Mismo color que el texto */
+}
+
+/* --------------------------------------------
+   CABECERA
+-------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #294959;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  
+}
+
+header img {
+  width: 10%;
+}
+header h2 {
+  margin-left: 20%;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 2rem;
+
+}
+
+nav {
+  margin-right: 15rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 30px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+h2{
+  color: white;
+  font-size: 2.5rem;
+}
+
+section {
+  background-color: #1abc9c;
+
+  img {
+    width: 200px;
+    justify-content: center;
+  }
+}
