@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -10,16 +13,54 @@
     <header>
         <h2>START BOOTSTRAP</h2>
         <nav>
-            <a href="">PORTAFOLIO</a>
-            <a href="">ABAOUT</a>
-            <a href="">CONTACTO</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>START BOOTSTRAP</h2>
-            <img src="img/avataaars.svg" alt="">
+            <div class="portada">
+                <img src="img/avataaars.svg" alt="">
+            </div>
+            <h2 class="titulos">START BOOTSTRAP</h2>
+             <p>Graphic Artist-Web Designer - Ilustrator</p>
+        </section>
+
+
+        <section id="portfolio">
+            <h2 class="titulos2">PORTFOLIO</h2>
+            <div class="columnas">
+                <img src="img/cabin.png" alt="">
+                <img src="img/cake.png" alt="">
+                <img src="img/circus.png" alt="">
+                <img src="img/game.png" alt="">
+                <img src="img/safe.png" alt="">
+                <img src="img/submarine.png" alt="">
+
+            </div>
+
+        </section>
+
+
+        
+        <section id="about">
+            <h2 class="titulos">ABOUT</h2>
+ 
+        </section>
+
+        
+        <section id="contacto">
+            <h2 class="titulos">CONTACT ME</h2>
+            <form action="/action_page.php">
+            <label for="fname">Name:</label><br>
+            <label for="lname">Email Address:</label><br>
+            <label for="lname">Phone Number:</label><br>
+            <label for="lname">Message:</label><br>
+ 
+            <input type="submit" value="Submit">
+            </form> 
         </section>
 
 

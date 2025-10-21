@@ -5,8 +5,13 @@
 }
 
 body {
-    background-color: rgb(155, 55, 55);
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* o 500, según lo que prefieras */
+  font-style: normal;
 }
+
+
 
 /* --------------------------------------------
    ENLACES
@@ -63,8 +68,42 @@ h2{
 section {
   background-color: #1abc9c;
 
-  img {
-    width: 200px;
-    justify-content: center;
+ 
+}
+.portada {
+  display: flex;            /* activa Flexbox */
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;      /* centra verticalmente */
+  height: 300px;            /* altura del contenedor */
+
+
   }
+.portada img {
+  max-width: 100%;  /* evita que se salga del contenedor */
+  max-height: 100%;
+}
+
+.titulos {
+  text-align: center;
+  padding: 2rem;
+}
+.titulos2{
+  text-align: center;
+  color: black;
+  margin-top: 4rem;
+}
+section p{
+  color: white;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+#portfolio{
+  background-color: white;
+}
+
+.columnas{
+  background: red;
+  display: flex;
+  
 }
