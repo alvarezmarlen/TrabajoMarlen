@@ -90,8 +90,10 @@ section {
 .titulos2{
   text-align: center;
   color: black;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
+
+
 section p{
   color: white;
   text-align: center;
@@ -100,10 +102,26 @@ section p{
 
 #portfolio{
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+
 }
 
-.columnas{
-  background: red;
-  display: flex;
+.galeria{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+
   
+  
+}
+.galeria img{
+  max-width: 300px;
+
+
+
 }
