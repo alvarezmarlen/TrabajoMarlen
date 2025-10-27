@@ -5,10 +5,8 @@
 }
 
 body {
-  font-family: "Google Sans Code", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400; /* o 500, según lo que prefieras */
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 /* --------------------------------------------
@@ -59,7 +57,7 @@ h2{
   font-size: 2.5rem;
 }
 
-section {
+#portada {
   background-color: #1abc9c; 
 }
 .portada {
@@ -80,18 +78,22 @@ section {
 .titulos2{
   text-align: center;
   color: black;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
+#portfolio, #about, #contacto{
+    scroll-margin-top: 60%; /* deja espacio para el header sticky */
+    padding-top: 5rem;
 
+}
 /* ----------------------------------------------------------------
       AQUI VA LA LINEA CON LA ESTRELLA QUE VA EN START BOOSTRAP
 ------------------------------------------------------------------*/
 .linea {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 1rem;
+  color: white;  
 }
 .linea::before,
 .linea::after {
@@ -102,6 +104,34 @@ section {
   border-radius: 20px;
 }
 
+.linea2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+  
+}
+.linea2::before,
+.linea2::after {
+  content: "";
+  height: 3px;
+  width: 80px;
+  background-color: black;
+  border-radius: 20px;
+}
+.estrella{
+  margin-top: -2.3rem;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+.estrella2{
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+}
 section p{
   color: white;
   text-align: center;
@@ -110,17 +140,20 @@ section p{
 
 #portfolio{
   background-color: white;
+  height: 100%;
+  margin-bottom: 10rem;
+}
+.contenedor{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
-
 }
 
 .galeria{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-top: 1.5rem;
 }
 
 .galeria img{
@@ -130,35 +163,32 @@ section p{
 /* -----------------------------------------------------------
               INFORMACION APORTADA POR MI COMPAÑERO
 --------------------------------------------------------------*/
-.estrella{
-  text-align: center;
-  margin: 0 0 20px 0;
-  font-size: 2rem;
-  color: white;
+#about{
+  background-color: #1abc9c;
+  height: 80vh;
 }
-
 .about-text {
   color: #fff;
-  font-size: 1rem;
-  line-height: 1.4rem;
-  max-width: 800px;
-  margin: 20px auto;
-  text-align: justify;
   display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: 0 35rem;
+  gap: 5rem;
 }
-
-.line1,
-.line2 {
-  flex: 1 1 300px;
-  margin: 20px;
+.about-text p{
+  margin-top: 1.5rem;
+  text-align: left;
 }
 
 .boton {
-  background-color: rgb(76, 190, 156);
-  border: 1px solid #ffffff;
-  border-radius: 6px;
-  padding: 12px 24px;
+  background-color: #1abc9c;
+  border: 2px solid #ffffff;
+  border-radius: 0.85rem;
+  padding: 1.3rem  3rem;
   color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  align-items: center;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
@@ -181,20 +211,255 @@ section p{
 -------------------------------------------- */
 #contacto{
   justify-content: center;
+  background-color: white;
+  height: 100%;
 }
 
+/* agregue esto nuevo */
+form{
+  width: 45rem;
+  margin: 5rem auto;
+  color:  #928f8f;
+  font-size: 1.2rem;
 
+
+}
+ label{
+  display: block;
+  padding-top: 1.5rem;
+
+}
+input{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  height: 2rem; /* ajusta según tu gusto */
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  width: 100%; 
+}
+.textarea{
+  margin-bottom: 5rem;
+}
+
+.send {
+  width: 6rem;
+  height: 4rem;
+  background-color: #1abc9c;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.send:hover {
+  background-color: #ffffff;
+  color: rgb(76, 190, 156);
+  transform: scale(1.05); /* Agranda ligeramente el botón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* -----------------------------------------------------
+  AQUI VA LA SECCION QUE ES ANTE DEL FOOTER
+-----------------------------------------------------------*/
+.ante-footer{
+  background: #2c3e50;
+  color: white;
+  min-height: 30vh;
+}
+.contenedor-footer{
+  display: flex;
+  justify-content: center;
+  margin: 0 25rem;
+  gap: 5rem;
+ 
+}
+.locacion, .around, .freelance{
+  flex: 1 1 300px; /* columnas responsivas */ 
+  margin-top: 4rem;
+
+}
+.locacion h4, .around h4, .freelance h4{ 
+  text-align: center;
+  font-size: 1.6rem;
+}
+.locacion p, .around p, .freelance p{ 
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+.resaltado{
+  color: #1abc9c;
+}
+.iconos{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.iconos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.iconos a i {
+  font-size: 1.5rem; /* Aumenta o disminuye el tamaño del icono */
+  color: white;      /* Color del icono */
+  transition: transform 0.3s ease;
+}
+
+.iconos a:hover i {
+  transform: scale(1.2); /* Efecto al pasar el ratón */
+}
 /* --------------------------------------------
    PIE DE PÁGINA
 -------------------------------------------- */
 footer {
-  background: #0c0e0c;
+  background: #1a252f;
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 1.5rem;
 }
 
-footer a {
-  color: #e8f5e9;
+
+
+
+/* =========================================================
+   📱 MEDIA QUERY PARA TABLETS (máx. 650px)
+========================================================= */
+@media (max-width: 650px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  header img {
+    width: 25%;
+    margin-bottom: 0.5rem;
+  }
+
+  header h2 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  nav {
+    margin-right: 0;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .portada {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .about-text {
+    flex-direction: column;
+    margin: 0 3rem;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  form {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .contenedor-footer {
+    flex-direction: column;
+    margin: 0 5rem;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .iconos a {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .iconos a i {
+    font-size: 1.2rem;
+  }
 }
 
+/* =========================================================
+   📱 MEDIA QUERY PARA MÓVILES (máx. 400px)
+========================================================= */
+@media (max-width: 400px) {
+
+  header img {
+    width: 35%;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .portada {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-text {
+    margin: 0 1.5rem;
+    font-size: 1rem;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .contenedor-footer {
+    margin: 0 2rem;
+    gap: 1.5rem;
+  }
+
+  .locacion h4, .around h4, .freelance h4 {
+    font-size: 1.3rem;
+  }
+
+  .locacion p, .around p, .freelance p {
+    font-size: 1rem;
+  }
+
+  .iconos a {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .iconos a i {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
